@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Search indexing remains disabled until the legal and naming review is complete.
