@@ -16,5 +16,5 @@ jobs:
         run: |
           count=$(grep -RIl --exclude-dir=.git 'LEGAL_TODO' . | wc -l)
           if [ "$count" -gt 0 ]; then
-            echo "::notice::$count file(s) still contain LEGAL_TODO markers; GitHub Pages must remain disabled."
+            echo "::warning::$count file(s) still contain LEGAL_TODO markers; this preview is not legally complete for a production launch."
           fi

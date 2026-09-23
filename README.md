@@ -4,7 +4,7 @@ German-first, bilingual static website for **Sovinity AI** and the working produ
 
 ## Status
 
-The repository is public, but GitHub Pages is intentionally **not enabled yet**. The legal pages contain `LEGAL_TODO` markers. Publishing is blocked until those details have been supplied and reviewed and both the company and product names have been cleared.
+GitHub Pages publishes the current site as a **technical preview** at `https://sovinityai.github.io/website/`. The legal pages still contain `LEGAL_TODO` markers, search indexing remains blocked, and the custom domains must not be treated as a production launch until the operator details and naming review are complete.
 
 ## Local preview
 
@@ -32,7 +32,7 @@ The site intentionally uses no analytics, advertising, external fonts, forms, tr
 4. Replace **Divinity** and complete professional clearance for the replacement product name.
 5. Complete professional clearance of **Sovinity**, including similarity to the established European cloud provider **Solvinity**.
 6. Use `sovinity.com` as the intended canonical domain and redirect `sovinity.de` to the German version only after the naming clearance passes.
-7. Configure DNS and GitHub Pages only after the preceding gates pass.
+7. Configure the custom-domain DNS only after the preceding gates pass. GitHub Pages currently serves the repository-path preview.
 8. Update `robots.txt`, `sitemap.xml`, canonical URLs, and Open Graph URLs for the chosen domain.
 
 ## Content and licensing
