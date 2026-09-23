@@ -1,6 +1,6 @@
 # Sovinity AI website
 
-German-first, bilingual static website for **Sovinity AI** and the working product name **Divinity**.
+German-first, bilingual static website for **Sovinity**.
 
 ## Status
 
@@ -29,11 +29,10 @@ The site intentionally uses no analytics, advertising, external fonts, forms, tr
 1. Complete every item in [`LEGAL-TODO.md`](LEGAL-TODO.md).
 2. Remove all `LEGAL_TODO` markers and draft warnings.
 3. Have the legal pages reviewed for the actual operator.
-4. Replace **Divinity** and complete professional clearance for the replacement product name.
-5. Complete professional clearance of **Sovinity**, including similarity to the established European cloud provider **Solvinity**.
-6. Use `sovinity.com` as the intended canonical domain and redirect `sovinity.de` to the German version only after the naming clearance passes.
-7. Configure the custom-domain DNS only after the preceding gates pass. GitHub Pages currently serves the repository-path preview.
-8. Update `robots.txt`, `sitemap.xml`, canonical URLs, and Open Graph URLs for the chosen domain.
+4. Complete professional clearance of **Sovinity**, including similarity to the established European cloud provider **Solvinity**.
+5. Use `sovinity.com` as the intended canonical domain and redirect `sovinity.de` to the German version only after the naming clearance passes.
+6. Configure the custom-domain DNS only after the preceding gates pass. GitHub Pages currently serves the repository-path preview.
+7. Update `robots.txt`, `sitemap.xml`, canonical URLs, and Open Graph URLs for the chosen domain.
 
 ## Content and licensing
 
