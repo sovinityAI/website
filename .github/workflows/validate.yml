@@ -12,9 +12,9 @@ jobs:
       - name: Check required files and internal links
         run: |
           python3 scripts/validate_site.py
-      - name: Report publication blockers
+      - name: Report legal-page placeholders
         run: |
-          count=$(grep -RIl --exclude-dir=.git 'LEGAL_TODO' . | wc -l)
-          if [ "$count" -gt 0 ]; then
-            echo "::warning::$count file(s) still contain LEGAL_TODO markers; this preview is not legally complete for a production launch."
+          markers=$(grep -RIl 'LEGAL_TODO' impressum datenschutz en/imprint en/privacy || true)
+          if [ -n "$markers" ]; then
+            echo "::warning::Published legal pages still contain placeholders; review them before publication."
           fi

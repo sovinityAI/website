@@ -4,7 +4,9 @@ German-first, bilingual static website for **Sovinity**.
 
 ## Status
 
-GitHub Pages publishes the current site as a **technical preview** at `https://sovinityai.github.io/website/`. The legal pages still contain `LEGAL_TODO` markers, search indexing remains blocked, and the custom domains must not be treated as a production launch until the operator details and naming review are complete.
+GitHub Pages publishes the site as a public **technical preview**. On 24 September 2026, the repository-path URL `https://sovinityai.github.io/website/` redirected to `https://sovinity.com/`. This does not mean that the domain setup or the indexed commercial launch is complete; those remain tracked in [#3](https://github.com/sovinityAI/website/issues/3) and [#4](https://github.com/sovinityAI/website/issues/4).
+
+The German and English imprint and privacy pages contain published operator information. Their placeholders and review banners were removed under [#1](https://github.com/sovinityAI/website/issues/1). No external professional legal review was performed. Search indexing remains blocked by `robots.txt`.
 
 ## Local preview
 
@@ -18,21 +20,20 @@ Then open `http://localhost:8080`.
 
 - `/` — German product page
 - `/en/` — English product page
-- `/impressum/` and `/datenschutz/` — German legal drafts
-- `/en/imprint/` and `/en/privacy/` — English translations
+- `/impressum/` and `/datenschutz/` — published German imprint and privacy notice
+- `/en/imprint/` and `/en/privacy/` — published English versions
 - `/assets/` — local CSS, JavaScript, and favicon
 
 The site intentionally uses no analytics, advertising, external fonts, forms, trackers, or third-party embeds.
 
-## Before publication
+## Remaining launch work
 
-1. Complete every item in [`LEGAL-TODO.md`](LEGAL-TODO.md).
-2. Remove all `LEGAL_TODO` markers and draft warnings.
-3. Have the legal pages reviewed for the actual operator.
-4. Complete professional clearance of **Sovinity**, including similarity to the established European cloud provider **Solvinity**.
-5. Use `sovinity.com` as the intended canonical domain and redirect `sovinity.de` to the German version only after the naming clearance passes.
-6. Configure the custom-domain DNS only after the preceding gates pass. GitHub Pages currently serves the repository-path preview.
-7. Update `robots.txt`, `sitemap.xml`, canonical URLs, and Open Graph URLs for the chosen domain.
+- [#13](https://github.com/sovinityAI/website/issues/13) must clarify GitHub Pages' GDPR role and any applicable data-processing agreement before the final indexed/commercial launch or adding forms, tracking, accounts, or non-public personal data.
+- [#12](https://github.com/sovinityAI/website/issues/12) tracks an additional direct contact channel before commercial lead capture, paid pilots, subscriptions, or online contract initiation.
+- The [naming decision in #2](https://github.com/sovinityAI/website/issues/2) accepts the documented risk without a professional written clearance. [#3](https://github.com/sovinityAI/website/issues/3) still tracks complete domain and redirect setup, including `sovinity.de`.
+- [#4](https://github.com/sovinityAI/website/issues/4) tracks the indexed/commercial launch, including the approved indexing policy, sitemap, canonical URLs, and metadata.
+
+[`LEGAL-TODO.md`](LEGAL-TODO.md) records the completed legal-page work and the remaining publication gates. The published pages do not establish external legal approval.
 
 ## Content and licensing
 

@@ -1,39 +1,17 @@
-# Legal information required before publication
+# Website publication status and remaining legal work
 
-Do not send sensitive identity documents or credentials. Supply only the public business details that should appear on the website.
+GitHub Pages already publishes the static site. On 24 September 2026, its repository-path URL redirected to `https://sovinity.com/`. The site remains a technical preview while the indexed/commercial launch in [#4](https://github.com/sovinityAI/website/issues/4) is open. `robots.txt` currently blocks search indexing.
 
-## Operator
+## Completed
 
-- Full legal name or registered company name
-- Legal form, if applicable
-- Full service address: street, house number, postcode, city, country
-- Authorised representative(s), if applicable
+- [#1](https://github.com/sovinityAI/website/issues/1) added operator and contact details to the German and English imprint and privacy pages, removed legal placeholders and review banners, and published those pages. No external professional legal review was performed.
+- [#2](https://github.com/sovinityAI/website/issues/2) recorded the decision to keep the Sovinity name and accept the documented naming risk. A professional written trade-mark opinion was intentionally not obtained; the decision is not legal clearance.
 
-## Contact
+## Still open
 
-- Public contact email address
-- A second rapid/direct contact channel if required for the chosen operator setup (for example a business telephone number)
-- Privacy contact email if different
-- Email provider, processing locations, and retention rules if email contact is offered
+- [#13](https://github.com/sovinityAI/website/issues/13): establish evidence for GitHub Pages' GDPR role, the applicability of Article 28 GDPR, and any relevant data-processing agreement. Resolve this before an indexed/commercial launch or adding forms, tracking, accounts, or non-public personal data.
+- [#12](https://github.com/sovinityAI/website/issues/12): add and review a direct contact channel before commercial lead capture, paid pilots, subscriptions, or online contract initiation. The published pages currently offer email contact only.
+- [#3](https://github.com/sovinityAI/website/issues/3): finish and verify `sovinity.com` and the `sovinity.de` redirect, including DNS, HTTPS, and routes. A working `sovinity.com` page alone does not complete this issue.
+- [#4](https://github.com/sovinityAI/website/issues/4): prepare the indexed/commercial launch after its legal and domain dependencies, then update `robots.txt`, sitemap, canonical URLs, and metadata as approved.
 
-## Registrations
-
-- Commercial/cooperative/association/partnership register, court and number, if applicable
-- VAT identification number under § 27a UStG, if available
-- Economic identification number, if available and intended for publication
-- Supervisory authority and professional-law information if the operator performs a regulated profession
-- Whether the operator is willing or obliged to participate in consumer dispute resolution, and the employee count relevant to § 36 VSBG
-
-## Editorial responsibility
-
-- Name and German service address under § 18(2) MStV only if the site offers journalistic-editorial content
-
-## Decisions
-
-- Canonical domain: `sovinity.de`, `sovinity.com`, or a product subdomain
-- Whether the operator is currently an individual, a partnership, or a registered company
-- Whether the public website will include an email link, a form, analytics, newsletters, videos, maps, or external embeds
-- GitHub account type, contracting entity, and any applicable data-processing agreement
-- Publication date
-
-After the details are inserted, remove the `LEGAL_TODO` markers, remove the draft banners, review the privacy description against the final technical setup, and then enable GitHub Pages.
+Recheck the German and English legal pages whenever the operator, hosting, domain, contact path, or data processing changes. Do not publish identity documents, credentials, private contact details, or unreviewed legal assertions.
