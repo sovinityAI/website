@@ -37,4 +37,6 @@ The site intentionally uses no analytics, advertising, external fonts, forms, tr
 
 ## Content and licensing
 
-No open-source license has been selected for this website repository. Public visibility does not grant reuse rights. Product and source-code licensing will be decided separately.
+All rights are reserved for this website repository's code, text, images, and other visual assets, except where an individual file expressly states otherwise. No open-source or content license granting general reuse is offered.
+
+GitHub's [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) permit viewing and forking a public repository through GitHub's features. Public visibility does not otherwise grant permission to use, modify, redistribute, or republish this material. Licensing of other Sovinity repositories is separate.
