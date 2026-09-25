@@ -46,19 +46,25 @@
             <a class="button secondary" href="#produkt">So arbeitet Sovinity</a>
           </div>
         </div>
-        <div class="product-frame" aria-label="Beispiel einer Antwort mit Quellen">
-          <div class="product-window">
-            <div class="window-bar"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="window-title">Sovinity · Dokumente</span></div>
-            <div class="chat-preview">
-              <p class="question">Wann endet die Kündigungsfrist für den Vertrag?</p>
-              <div class="answer">
-                <p>Der Vertrag kann mit einer Frist von drei Monaten zum Jahresende gekündigt werden. Die Kündigung muss damit spätestens am 30. September eingehen.<span class="cite">S1</span></p>
-                <div class="sources">
-                  <div class="source"><span class="source-icon">PDF</span><span>Rahmenvertrag_2026.pdf · Seite 7</span></div>
-                  <div class="source"><span class="source-icon">DOC</span><span>Vertragsnotizen.docx · Abschnitt 3</span></div>
-                </div>
-              </div>
-            </div>
+        <div class="product-tour" data-product-tour>
+          <div class="product-tabs" role="tablist" aria-label="Drei Schritte in Sovinity Desktop">
+            <button id="tour-tab-ask-de" type="button" role="tab" aria-selected="true" aria-controls="tour-panel-ask-de">1 · Fragen</button>
+            <button id="tour-tab-evidence-de" type="button" role="tab" aria-selected="false" aria-controls="tour-panel-evidence-de" tabindex="-1">2 · Belege</button>
+            <button id="tour-tab-verify-de" type="button" role="tab" aria-selected="false" aria-controls="tour-panel-verify-de" tabindex="-1">3 · Original</button>
+          </div>
+          <div class="product-stage">
+            <figure id="tour-panel-ask-de" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-ask-de">
+              <img src="assets/product/desktop-ask-de.png" width="1000" height="700" loading="eager" decoding="async" fetchpriority="high" alt="Sovinity Desktop beantwortet eine Frage zu einem fiktiven Mietvertrag direkt auf dem lokalen Computer.">
+              <figcaption><strong>Fragen.</strong> In eigenen Worten nach Informationen in lokalen Dokumenten suchen.</figcaption>
+            </figure>
+            <figure id="tour-panel-evidence-de" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-evidence-de">
+              <img src="assets/product/desktop-evidence-de.png" width="1000" height="700" loading="lazy" decoding="async" alt="Sovinity Desktop verbindet die fiktive Antwort mit zwei nummerierten Dokumentquellen.">
+              <figcaption><strong>Belege sehen.</strong> Nummerierte Fundstellen verbinden die Antwort mit den verwendeten Dateien.</figcaption>
+            </figure>
+            <figure id="tour-panel-verify-de" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-verify-de">
+              <img src="assets/product/desktop-verify-de.png" width="1000" height="700" loading="lazy" decoding="async" alt="Sovinity Desktop zeigt neben dem Chat die markierte Passage in einem fiktiven Originaldokument.">
+              <figcaption><strong>Original prüfen.</strong> Die zitierte Passage direkt neben der Antwort öffnen.</figcaption>
+            </figure>
           </div>
         </div>
       </div>

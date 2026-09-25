@@ -36,16 +36,25 @@
           <p class="hero-lead">Ask questions about your local documents. Sovinity shows answers with verifiable source passages — without requiring a public AI service to know your confidential content.</p>
           <div class="actions"><a class="button primary" href="pricing/">View pricing</a><a class="button secondary" href="#product">How Sovinity works</a></div>
         </div>
-        <div class="product-frame" aria-label="Example answer with sources">
-          <div class="product-window">
-            <div class="window-bar"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="window-title">Sovinity · Documents</span></div>
-            <div class="chat-preview">
-              <p class="question">When does the cancellation period end?</p>
-              <div class="answer">
-                <p>The agreement may be terminated with three months' notice at the end of the year. Notice must therefore be received by 30 September.<span class="cite">S1</span></p>
-                <div class="sources"><div class="source"><span class="source-icon">PDF</span><span>Framework_Agreement_2026.pdf · Page 7</span></div><div class="source"><span class="source-icon">DOC</span><span>Contract_notes.docx · Section 3</span></div></div>
-              </div>
-            </div>
+        <div class="product-tour" data-product-tour>
+          <div class="product-tabs" role="tablist" aria-label="Three steps in Sovinity Desktop">
+            <button id="tour-tab-ask-en" type="button" role="tab" aria-selected="true" aria-controls="tour-panel-ask-en">1 · Ask</button>
+            <button id="tour-tab-evidence-en" type="button" role="tab" aria-selected="false" aria-controls="tour-panel-evidence-en" tabindex="-1">2 · Evidence</button>
+            <button id="tour-tab-verify-en" type="button" role="tab" aria-selected="false" aria-controls="tour-panel-verify-en" tabindex="-1">3 · Original</button>
+          </div>
+          <div class="product-stage">
+            <figure id="tour-panel-ask-en" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-ask-en">
+              <img src="../assets/product/desktop-ask-en.png" width="1000" height="700" loading="eager" decoding="async" fetchpriority="high" alt="Sovinity Desktop answers a question about a fictional tenancy agreement on the local computer.">
+              <figcaption><strong>Ask.</strong> Search local documents with a question in your own words.</figcaption>
+            </figure>
+            <figure id="tour-panel-evidence-en" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-evidence-en">
+              <img src="../assets/product/desktop-evidence-en.png" width="1000" height="700" loading="lazy" decoding="async" alt="Sovinity Desktop connects the fictional answer to two numbered document sources.">
+              <figcaption><strong>See the evidence.</strong> Numbered passages connect the answer to the files used.</figcaption>
+            </figure>
+            <figure id="tour-panel-verify-en" class="product-panel" role="tabpanel" aria-labelledby="tour-tab-verify-en">
+              <img src="../assets/product/desktop-verify-en.png" width="1000" height="700" loading="lazy" decoding="async" alt="Sovinity Desktop shows the highlighted passage in a fictional original document next to the chat.">
+              <figcaption><strong>Verify the original.</strong> Open the cited passage directly beside the answer.</figcaption>
+            </figure>
           </div>
         </div>
       </div>

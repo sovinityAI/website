@@ -15,7 +15,7 @@ class LinkParser(HTMLParser):
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attr = dict(attrs)
-        if tag in {"a", "link", "script"}:
+        if tag in {"a", "link", "script", "img"}:
             value = attr.get("href") or attr.get("src")
             if value:
                 self.links.append(value)
