@@ -1,20 +1,20 @@
-# Sovinity AI website
+# Sovinity-AI-Website
 
-German-first, bilingual static website for **Sovinity**.
+Deutschsprachige, zweisprachig verfügbare statische Website für **Sovinity**.
 
 ## Status
 
-GitHub Pages publishes the site as a public **technical preview**. On 24 September 2026, the repository-path URL `https://sovinityai.github.io/website/` redirected to `https://sovinity.com/`. This does not mean that the domain setup or the indexed commercial launch is complete; those remain tracked in [#3](https://github.com/sovinityAI/website/issues/3) and [#4](https://github.com/sovinityAI/website/issues/4).
+GitHub Pages veröffentlicht die Website als öffentliche **technische Vorschau**. Am 24. September 2026 leitete die Repository-URL `https://sovinityai.github.io/website/` auf `https://sovinity.com/` weiter. Das bedeutet nicht, dass die Domain-Einrichtung oder der indexierte kommerzielle Start abgeschlossen ist; diese Arbeiten werden weiterhin in [#3](https://github.com/sovinityAI/website/issues/3) und [#4](https://github.com/sovinityAI/website/issues/4) verfolgt.
 
-The German and English imprint and privacy pages contain published operator information. Their placeholders and review banners were removed under [#1](https://github.com/sovinityAI/website/issues/1). No external professional legal review was performed. Search indexing remains blocked by `robots.txt`.
+Das deutsche und englische Impressum sowie die deutschen und englischen Datenschutzhinweise enthalten veröffentlichte Betreiberangaben. Ihre Platzhalter und Prüfhinweise wurden mit [#1](https://github.com/sovinityAI/website/issues/1) entfernt. Eine externe professionelle Rechtsprüfung fand nicht statt. `robots.txt` verhindert weiterhin die Suchmaschinenindexierung.
 
-## Local preview
+## Lokale Vorschau
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Danach `http://localhost:8080` öffnen.
 
 ## Qualitätsprüfungen
 
@@ -43,28 +43,28 @@ npm run test:visual
 
 Die CI führt weiterhin zuerst `scripts/validate_site.py` aus. Nur nach erfolgreicher statischer Validierung startet der Browser-Job; dort laufen funktionale und visuelle Prüfungen gemeinsam in derselben festgelegten Playwright-Umgebung.
 
-## Structure
+## Struktur
 
-- `/` — German product page
-- `/en/` — English product page
-- `/preise/` and `/en/pricing/` — German and English pricing pages
-- `/impressum/` and `/datenschutz/` — published German imprint and privacy notice
-- `/en/imprint/` and `/en/privacy/` — published English versions
-- `/assets/` — local CSS, JavaScript, and favicon
+- `/` — deutsche Produktseite
+- `/en/` — englische Produktseite
+- `/preise/` und `/en/pricing/` — deutsche und englische Preisseite
+- `/impressum/` und `/datenschutz/` — veröffentlichtes deutsches Impressum und veröffentlichte deutsche Datenschutzhinweise
+- `/en/imprint/` und `/en/privacy/` — veröffentlichte englische Fassungen
+- `/assets/` — lokale CSS-, JavaScript- und Favicon-Dateien
 
-The site intentionally uses no analytics, advertising, external fonts, forms, trackers, or third-party embeds.
+Die Website verwendet bewusst keine Analysewerkzeuge, Werbung, externen Schriftarten, Formulare, Tracker oder Einbettungen Dritter.
 
-## Remaining launch work
+## Verbleibende Arbeiten vor dem Start
 
-- [#13](https://github.com/sovinityAI/website/issues/13) must clarify GitHub Pages' GDPR role and any applicable data-processing agreement before the final indexed/commercial launch or adding forms, tracking, accounts, or non-public personal data.
-- [#12](https://github.com/sovinityAI/website/issues/12) tracks an additional direct contact channel before commercial lead capture, paid pilots, subscriptions, or online contract initiation.
-- The [naming decision in #2](https://github.com/sovinityAI/website/issues/2) accepts the documented risk without a professional written clearance. [#3](https://github.com/sovinityAI/website/issues/3) still tracks complete domain and redirect setup, including `sovinity.de`.
-- [#4](https://github.com/sovinityAI/website/issues/4) tracks the indexed/commercial launch, including the approved indexing policy, sitemap, canonical URLs, and metadata.
+- [#13](https://github.com/sovinityAI/website/issues/13) muss vor dem endgültigen indexierten beziehungsweise kommerziellen Start oder dem Hinzufügen von Formularen, Tracking, Konten oder nicht öffentlichen personenbezogenen Daten die DSGVO-Rolle von GitHub Pages und eine gegebenenfalls anwendbare Auftragsverarbeitungsvereinbarung klären.
+- [#12](https://github.com/sovinityAI/website/issues/12) verfolgt einen zusätzlichen direkten Kontaktkanal, der vor kommerzieller Lead-Erfassung, bezahlten Pilotprojekten, Abonnements oder Online-Vertragsabschlüssen erforderlich ist.
+- Die [Namensentscheidung in #2](https://github.com/sovinityAI/website/issues/2) akzeptiert das dokumentierte Risiko ohne professionelle schriftliche Freigabe. [#3](https://github.com/sovinityAI/website/issues/3) verfolgt weiterhin die vollständige Domain- und Weiterleitungseinrichtung einschließlich `sovinity.de`.
+- [#4](https://github.com/sovinityAI/website/issues/4) verfolgt den indexierten beziehungsweise kommerziellen Start einschließlich freigegebener Indexierungsrichtlinie, Sitemap, kanonischer URLs und Metadaten.
 
-[`LEGAL-TODO.md`](LEGAL-TODO.md) records the completed legal-page work and the remaining publication gates. The published pages do not establish external legal approval.
+[`LEGAL-TODO.md`](LEGAL-TODO.md) dokumentiert die abgeschlossenen Arbeiten an den Rechtstexten und die verbleibenden Veröffentlichungs-Gates. Die veröffentlichten Seiten stellen keine externe rechtliche Freigabe dar.
 
-## Content and licensing
+## Inhalte und Lizenzierung
 
-All rights are reserved for this website repository's code, text, images, and other visual assets, except where an individual file expressly states otherwise. No open-source or content license granting general reuse is offered.
+Für Code, Texte, Bilder und andere visuelle Inhalte dieses Website-Repositories bleiben alle Rechte vorbehalten, sofern eine einzelne Datei nicht ausdrücklich etwas anderes bestimmt. Es wird keine Open-Source- oder Inhaltslizenz angeboten, die eine allgemeine Weiterverwendung erlaubt.
 
-GitHub's [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) permit viewing and forking a public repository through GitHub's features. Public visibility does not otherwise grant permission to use, modify, redistribute, or republish this material. Licensing of other Sovinity repositories is separate.
+Die [Nutzungsbedingungen von GitHub](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) erlauben, ein öffentliches Repository über die GitHub-Funktionen anzusehen und zu forken. Die öffentliche Sichtbarkeit erteilt darüber hinaus keine Erlaubnis, dieses Material zu verwenden, zu verändern, weiterzugeben oder erneut zu veröffentlichen. Für andere Sovinity-Repositories gelten eigene Lizenzbedingungen.
