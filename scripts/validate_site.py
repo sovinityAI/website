@@ -55,7 +55,12 @@ def hex_token(source: str, name: str) -> str:
 
 
 def main() -> None:
-    html_pages = sorted(ROOT.rglob("*.html"))
+    ignored_directories = {"node_modules", "playwright-report", "test-results"}
+    html_pages = sorted(
+        path
+        for path in ROOT.rglob("*.html")
+        if not ignored_directories.intersection(path.relative_to(ROOT).parts)
+    )
     required = [
         ROOT / "index.html",
         ROOT / "en/index.html",
@@ -95,6 +100,8 @@ def main() -> None:
                 failures.append(f"{relative}: responsive navigation control missing")
             if "assets/site.js" not in source:
                 failures.append(f"{relative}: navigation script missing")
+        if "skip-link" in source and '<main id="main" tabindex="-1">' not in source:
+            failures.append(f"{relative}: skip-link target must be programmatically focusable")
 
     error_page = (ROOT / "404.html").read_text(encoding="utf-8")
     if '<base href="/">' not in error_page:
