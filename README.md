@@ -20,6 +20,7 @@ Then open `http://localhost:8080`.
 
 - `/` — German product page
 - `/en/` — English product page
+- `/preise/` and `/en/pricing/` — German and English pricing pages
 - `/impressum/` and `/datenschutz/` — published German imprint and privacy notice
 - `/en/imprint/` and `/en/privacy/` — published English versions
 - `/assets/` — local CSS, JavaScript, and favicon
