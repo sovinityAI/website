@@ -96,6 +96,10 @@ def main() -> None:
             if "assets/site.js" not in source:
                 failures.append(f"{relative}: navigation script missing")
 
+    error_page = (ROOT / "404.html").read_text(encoding="utf-8")
+    if '<base href="/">' not in error_page:
+        failures.append("404.html: asset base must match the sovinity.com root")
+
     styles = (ROOT / "assets/styles.css").read_text(encoding="utf-8")
     if not styles.startswith('@import "./visual-contract.css";'):
         failures.append("assets/styles.css: local Visual Contract snapshot is not imported first")
