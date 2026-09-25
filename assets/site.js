@@ -2,21 +2,34 @@
   const header = document.querySelector('.site-header');
   const menu = document.querySelector('.menu-button');
   const links = document.querySelector('.nav-links');
+  const german = document.documentElement.lang === 'de';
+
+  const setMenuOpen = (open) => {
+    links?.classList.toggle('open', open);
+    menu?.setAttribute('aria-expanded', String(open));
+    menu?.setAttribute('aria-label', german
+      ? (open ? 'Navigation schließen' : 'Navigation öffnen')
+      : (open ? 'Close navigation' : 'Open navigation'));
+  };
 
   const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 8);
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 
   menu?.addEventListener('click', () => {
-    const open = links?.classList.toggle('open') ?? false;
-    menu.setAttribute('aria-expanded', String(open));
+    setMenuOpen(!(links?.classList.contains('open') ?? false));
   });
 
   links?.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      links.classList.remove('open');
-      menu?.setAttribute('aria-expanded', 'false');
+      setMenuOpen(false);
     });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !links?.classList.contains('open')) return;
+    setMenuOpen(false);
+    menu?.focus();
   });
 
   document.querySelectorAll('[data-product-tour]').forEach((tour) => {
