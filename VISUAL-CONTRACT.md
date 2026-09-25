@@ -42,6 +42,8 @@ Die Identität gilt einheitlich für:
 - die 404-Seite,
 - Header, Footer, Metadaten, Favicon und mobile Navigation.
 
+Die 404-Seite verwendet die Root-Basis `/`, weil der Pages-Endpunkt auf die Custom Domain `sovinity.com` weiterleitet. Dadurch bleiben Marke und Styles auch bei unbekannten produktiven Pfaden erreichbar.
+
 Texte zu Funktionen, Preisen, Verfügbarkeit, Recht und Datenschutz werden durch diese Gestaltungssynchronisation nicht erweitert oder fachlich verändert. Die pausierte Cloud-Anwendung ist keine visuelle Referenz für diese Umsetzung.
 
 ## Prüfroutine
