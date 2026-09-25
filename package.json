@@ -1,0 +1,18 @@
+{
+  "name": "sovinity-website",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Qualitätsprüfungen für die statische Sovinity-Website",
+  "scripts": {
+    "test": "npm run test:static && npm run test:browser:functional",
+    "test:static": "python3 scripts/validate_site.py",
+    "test:browser": "playwright test",
+    "test:browser:functional": "playwright test --grep-invert @visual",
+    "test:visual": "bash scripts/test_visual_baselines.sh",
+    "test:visual:update": "bash scripts/test_visual_baselines.sh --update"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0"
+  }
+}
