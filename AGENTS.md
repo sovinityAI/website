@@ -1,51 +1,52 @@
-# Sovinity Website human-and-AI working agreement
+# Arbeitsvereinbarung für Menschen und KI im Website-Repository
 
-## GitHub task contract
+## GitHub-Auftragsvertrag
 
-- GitHub Issues are the source of truth for planned work. The organization project is [Sovinity Product](https://github.com/orgs/sovinityAI/projects/1).
-- Implementation work requires an open issue in `sovinityAI/website` or an explicitly linked cross-repository issue. Analysis and read-only investigation do not require an issue.
-- Before editing, read the complete issue, comments, labels, dependencies, linked pull requests, and acceptance criteria.
-- Keep the change within the issue scope. Record newly discovered work as a separate linked issue instead of silently expanding scope.
-- Do not mark an issue complete until every acceptance criterion has been checked against concrete evidence.
-- Chat messages, local notes, and an agent's memory are not durable task state. Record decisions, blockers, handoffs, and completion evidence in the GitHub Issue or linked pull request.
+- GitHub Issues sind die verbindliche Quelle für geplante Arbeit. Das organisationsweite Project ist [Sovinity Product](https://github.com/orgs/sovinityAI/projects/1).
+- Umsetzungsarbeit benötigt ein offenes Issue in `sovinityAI/website` oder ein ausdrücklich verknüpftes repositoryübergreifendes Issue. Analyse und reine Leseprüfungen benötigen kein Issue.
+- Lies vor jeder Änderung das vollständige Issue einschließlich Kommentaren, Labels, Abhängigkeiten, verknüpften Pull Requests und Akzeptanzkriterien.
+- Halte Änderungen innerhalb des Issue-Scopes. Neu entdeckte Arbeit wird als separates verknüpftes Issue erfasst, statt den Scope stillschweigend zu erweitern.
+- Markiere ein Issue erst dann als abgeschlossen, wenn jedes Akzeptanzkriterium anhand konkreter Nachweise geprüft wurde.
+- Chats, lokale Notizen und Agenten-Memory sind kein dauerhafter Auftragsstand. Halte Entscheidungen, Blocker, Übergaben und Abschlussnachweise im GitHub Issue oder im verknüpften Pull Request fest.
+- Neue und wesentlich überarbeitete interne Arbeit wird nach [`sovinityAI/.github/SPRACHE.md`](https://github.com/sovinityAI/.github/blob/main/SPRACHE.md) auf Deutsch geführt.
 
-## Mandatory Project synchronization
+## Verbindliche Project-Synchronisierung
 
-Humans and AI agents follow the lifecycle documented in [`sovinityAI/.github/WORKFLOW.md`](https://github.com/sovinityAI/.github/blob/main/WORKFLOW.md):
+Menschen und KI-Agenten verwenden den in [`sovinityAI/.github/WORKFLOW.md`](https://github.com/sovinityAI/.github/blob/main/WORKFLOW.md) dokumentierten Lebenszyklus:
 
-- **Backlog**: valid work that is not yet ready or selected.
-- **Ready**: specified, unblocked, manually ordered, unassigned, and available for a suitable contributor to pull.
-- **In progress**: a human or AI contributor has pulled and claimed the issue and is actively working on it.
-- **Needs input**: work is paused for a named decision, dependency, sensitive input, or external authority.
-- **In review**: output exists and is waiting for human, legal, visual, or technical verification.
-- **Done**: the acceptance criteria are verified and the issue is closed.
+- **Backlog**: gültige Arbeit, die noch nicht bereit oder ausgewählt ist.
+- **Bereit**: ausreichend beschrieben, nicht blockiert, manuell eingeordnet, nicht zugewiesen und für geeignete Mitwirkende verfügbar.
+- **In Arbeit**: Ein Mensch oder KI-Agent hat das Issue übernommen und arbeitet aktiv daran.
+- **Benötigt Input**: Die Arbeit pausiert wegen einer benannten Entscheidung, Abhängigkeit, sensiblen Information oder externen Zuständigkeit.
+- **In Prüfung**: Ein Ergebnis liegt vor und wartet auf menschliche, rechtliche, visuelle oder technische Prüfung.
+- **Erledigt**: Die Akzeptanzkriterien sind nachgewiesen und das Issue ist geschlossen.
 
-Keep the Project's **Work type** field current: `Any contributor`, `AI-suitable`, `Human judgment`, `Pairing`, or `External`. It describes the work and never assigns it.
+Halte das Project-Feld **Arbeitsart** aktuell: `Alle Mitwirkenden`, `KI-geeignet`, `Menschliche Entscheidung`, `Gemeinsame Arbeit` oder `Extern`. Es beschreibt die Arbeit und weist sie niemandem zu.
 
-- Pull work only from **Ready** after confirming that it is unassigned and unclaimed; assign the accountable GitHub user, add an AI claim comment where needed, and move it to **In progress** before editing.
-- Limit work in progress to one implementation issue per contributor or AI session unless a documented exception is necessary.
-- When work pauses, record the exact missing input or dependency, clear the active assignment, and move the issue to **Needs input**.
-- When implementation is complete, record verification evidence, clear the implementation assignment, and move the issue to **In review**.
-- Never leave an issue **In progress** when work has stopped or an agent turn ends without an active continuation.
+- Übernimm Arbeit nur aus **Bereit**, nachdem du geprüft hast, dass sie nicht zugewiesen oder bereits übernommen ist. Weise das verantwortliche GitHub-Konto zu, ergänze bei Bedarf einen KI-Übernahmekommentar und verschiebe das Issue vor der Bearbeitung nach **In Arbeit**.
+- Begrenze parallele Arbeit auf ein Umsetzungs-Issue pro mitwirkender Person oder KI-Sitzung, sofern keine dokumentierte Ausnahme erforderlich ist.
+- Bei einer Pause: Dokumentiere den exakt fehlenden Input oder die Abhängigkeit, entferne die aktive Zuweisung und verschiebe das Issue nach **Benötigt Input**.
+- Nach Abschluss der Umsetzung: Dokumentiere die Prüfnachweise, entferne die Umsetzungszuweisung und verschiebe das Issue nach **In Prüfung**.
+- Lasse ein Issue nie in **In Arbeit**, wenn die Arbeit gestoppt wurde oder eine Agenten-Sitzung ohne aktive Fortsetzung endet.
 
-## Selecting the next task
+## Auswahl der nächsten Aufgabe
 
-- When asked what to do next, inspect open issues across `sovinityAI/cloud`, `sovinityAI/SovinityDesktop`, `sovinityAI/website`, and `sovinityAI/.github`.
-- Exclude epics, **Needs input** work, and issues already covered by an open pull request.
-- Pull from **Ready**, not from another contributor's assigned work. Use the Product Board's saved top-to-bottom order: the highest suitable item in the **Ready** column is next.
-- Skip work whose **Work type** is unsuitable for the available contributor. `AI-suitable` means AI may perform it; it does not exclude a human contributor.
-- Recommend exactly one next issue and identify up to three follow-ups separately.
+- Prüfe bei der Frage nach der nächsten Aufgabe die offenen Issues in `sovinityAI/cloud`, `sovinityAI/SovinityDesktop`, `sovinityAI/website`, `sovinityAI/product` und `sovinityAI/.github`.
+- Schließe Epics, Arbeit in **Benötigt Input** und Issues aus, die bereits durch einen offenen Pull Request abgedeckt sind.
+- Übernimm Arbeit aus **Bereit**, nicht aus bereits zugewiesener Arbeit anderer Mitwirkender. Verwende die gespeicherte Reihenfolge des Product Boards von oben nach unten: Das oberste geeignete Issue in **Bereit** ist als Nächstes dran.
+- Überspringe Arbeit, deren **Arbeitsart** für die verfügbaren Mitwirkenden ungeeignet ist. `KI-geeignet` bedeutet, dass eine KI die Arbeit ausführen darf; Menschen sind dadurch nicht ausgeschlossen.
+- Empfiehl genau ein nächstes Issue und nenne getrennt davon bis zu drei Folgeaufgaben.
 
-## Git and pull requests
+## Git und Pull Requests
 
-- Use a branch named `<actor>/<issue-number>-<short-slug>` for implementation work, for example `codex/12-fix-import` or `ludwig/12-fix-import`.
-- Reference the issue in commits and pull requests. Use `Closes #<number>` for same-repository issues or `Closes owner/repository#<number>` for cross-repository issues.
-- Pull requests must summarize the change, list verification performed, and disclose remaining risks or unfinished acceptance criteria.
-- Do not merge or close an issue merely because files were changed; verification decides completion.
+- Verwende für Umsetzungsarbeit einen Branch nach dem Muster `<akteur>/<issue-nummer>-<kurzname>`, zum Beispiel `codex/12-fix-import` oder `ludwig/12-fix-import`.
+- Referenziere das Issue in Commits und Pull Requests. Verwende `Closes #<nummer>` für Issues im selben Repository oder `Closes owner/repository#<nummer>` für repositoryübergreifende Issues.
+- Pull Requests müssen die Änderung zusammenfassen, die ausgeführten Prüfungen nennen und verbleibende Risiken oder unerfüllte Akzeptanzkriterien offenlegen.
+- Führe Pull Requests und Commits auf Deutsch; technische Präfixe und unveränderliche Bezeichner dürfen gemäß `SPRACHE.md` bestehen bleiben.
+- Merge oder schließe ein Issue nicht allein deshalb, weil Dateien geändert wurden; der Nachweis entscheidet über den Abschluss.
 
-## Website verification and publication safety
+## Website-Prüfung und Veröffentlichungssicherheit
 
-- Run `python3 scripts/validate_site.py` for every functional or content change and inspect affected German and English pages visually at desktop and mobile sizes.
-- Keep legal, naming, domain, and indexing gates explicit. Do not remove draft warnings, enable indexing, or configure a production domain until the corresponding issues are complete.
-- Never publish private addresses, identity documents, credentials, or unapproved legal assertions.
-
+- Führe bei jeder funktionalen oder inhaltlichen Änderung `python3 scripts/validate_site.py` aus und prüfe betroffene deutsche und englische Seiten visuell in Desktop- und Mobilgrößen.
+- Halte rechtliche, Namens-, Domain- und Indexierungs-Gates ausdrücklich aufrecht. Entferne keine Entwurfswarnungen, aktiviere keine Indexierung und konfiguriere keine Produktivdomain, bevor die zugehörigen Issues abgeschlossen sind.
+- Veröffentliche niemals private Adressen, Identitätsdokumente, Zugangsdaten oder nicht freigegebene rechtliche Aussagen.
