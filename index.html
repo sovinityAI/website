@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-visual-contract-version="0.1.0">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,10 +20,10 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Hauptnavigation">
       <a class="wordmark" href="./" aria-label="Sovinity Startseite">
-        <span class="wordmark-mark" aria-hidden="true">S</span><span>sovinity</span>
+        <span class="wordmark-mark" aria-hidden="true"></span><span>sovinity</span>
       </a>
-      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false"><span></span></button>
-      <div class="nav-links">
+      <button class="menu-button" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="nav-links" id="site-nav">
         <a href="#produkt">Produkt</a>
         <a href="#datenhoheit">Datenhoheit</a>
         <a href="#zielgruppen">Für wen?</a>
@@ -180,7 +180,7 @@
 
   <footer class="site-footer">
     <div class="footer-grid container">
-      <a class="wordmark" href="./"><span class="wordmark-mark" aria-hidden="true">S</span><span>sovinity</span></a>
+      <a class="wordmark" href="./"><span class="wordmark-mark" aria-hidden="true"></span><span>sovinity</span></a>
       <div class="footer-links"><a href="preise/">Preise</a><a href="mailto:sovinity@meltzow.net">Kontakt</a><a href="impressum/">Impressum</a><a href="datenschutz/">Datenschutz</a><a href="en/">English</a></div>
       <p class="footer-note">Private Fragen zu Dokumenten mit nachvollziehbaren Quellen.</p>
     </div>

@@ -1,0 +1,54 @@
+/* Lokaler Snapshot des freigegebenen Sovinity Visual Contract 0.1.0.
+   Kanonische Quelle: sovinityAI/product@7ea5853, design/tokens.json.
+   Kein Laufzeit- oder Build-Abruf aus einem anderen Repository. */
+
+:root {
+  --background: #f4f1e9;
+  --surface: #fffef9;
+  --surface-soft: #ebe6da;
+  --text: #14201b;
+  --text-muted: #506159;
+  --line: rgba(20, 32, 27, 0.16);
+  --brand: #175f4c;
+  --brand-hover: #10271f;
+  --brand-soft: #dcefe7;
+  --accent: #64c79f;
+  --highlight: #c9ef9f;
+  --focus: #26755c;
+  --focus-inverse: #c9ef9f;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-display: 28px;
+  --radius-pill: 999px;
+  --shadow-card: 0 12px 40px rgba(23, 33, 29, 0.08);
+  --shadow-popover: 0 14px 40px rgba(23, 33, 29, 0.16);
+  --shadow-marketing: 0 24px 70px rgba(16, 39, 31, 0.12);
+  --motion-fast: 120ms;
+  --motion-normal: 180ms;
+  --motion-slow: 240ms;
+  --motion-easing: cubic-bezier(0.2, 0, 0, 1);
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 650;
+  --weight-bold: 700;
+  --weight-strong: 800;
+
+  /* Website-Variante und kompatible Namen des vorhandenen Stylesheets. */
+  --ink: var(--text);
+  --ink-soft: var(--text-muted);
+  --forest: #10271f;
+  --forest-2: #173a2f;
+  --green: var(--brand);
+  --green-bright: var(--accent);
+  --mint: var(--brand-soft);
+  --lime: var(--highlight);
+  --paper: var(--background);
+  --paper-2: var(--surface-soft);
+  --white: var(--surface);
+  --max: 1180px;
+  --radius: var(--radius-xl);
+  --shadow: var(--shadow-marketing);
+}
