@@ -23,6 +23,7 @@ Menschen und KI-Agenten verwenden den in [`sovinityAI/.github/WORKFLOW.md`](http
 
 Halte das Project-Feld **Arbeitsart** aktuell: `Alle Mitwirkenden`, `KI-geeignet`, `Menschliche Entscheidung`, `Gemeinsame Arbeit` oder `Extern`. Es beschreibt die Arbeit und weist sie niemandem zu.
 
+- Behandle die bestätigte Zuordnung zu `sovinityAI/projects/1` als Aufnahme-Gate. Bei Erstellung per CLI, API oder außerhalb der gemeinsamen Formulare: Issue sofort zum Project hinzufügen und die Zuordnung zurücklesen. Ohne bestätigte Zuordnung keine Zuweisung, kein Status **In Arbeit**, kein Branch und keine Umsetzung.
 - Übernimm Arbeit nur aus **Bereit**, nachdem du geprüft hast, dass sie nicht zugewiesen oder bereits übernommen ist. Weise das verantwortliche GitHub-Konto zu, ergänze bei Bedarf einen KI-Übernahmekommentar und verschiebe das Issue vor der Bearbeitung nach **In Arbeit**.
 - Begrenze parallele Arbeit auf ein Umsetzungs-Issue pro mitwirkender Person oder KI-Sitzung, sofern keine dokumentierte Ausnahme erforderlich ist.
 - Bei einer Pause: Dokumentiere den exakt fehlenden Input oder die Abhängigkeit, entferne die aktive Zuweisung und verschiebe das Issue nach **Benötigt Input**.
@@ -32,6 +33,7 @@ Halte das Project-Feld **Arbeitsart** aktuell: `Alle Mitwirkenden`, `KI-geeignet
 ## Auswahl der nächsten Aufgabe
 
 - Prüfe bei der Frage nach der nächsten Aufgabe die offenen Issues in `sovinityAI/cloud`, `sovinityAI/SovinityDesktop`, `sovinityAI/website`, `sovinityAI/product` und `sovinityAI/.github`.
+- Prüfe dabei `org:sovinityAI is:issue is:open no:project` und ordne offene Treffer zuerst dem gemeinsamen Project zu.
 - Schließe Epics, Arbeit in **Benötigt Input** und Issues aus, die bereits durch einen offenen Pull Request abgedeckt sind.
 - Übernimm Arbeit aus **Bereit**, nicht aus bereits zugewiesener Arbeit anderer Mitwirkender. Verwende die gespeicherte Reihenfolge des Product Boards von oben nach unten: Das oberste geeignete Issue in **Bereit** ist als Nächstes dran.
 - Überspringe Arbeit, deren **Arbeitsart** für die verfügbaren Mitwirkenden ungeeignet ist. `KI-geeignet` bedeutet, dass eine KI die Arbeit ausführen darf; Menschen sind dadurch nicht ausgeschlossen.
